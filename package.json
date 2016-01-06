@@ -1,0 +1,19 @@
+{
+  "name": "nonprofit",
+  "version": "1.0.0",
+  "description": "A MEAN stack app for community services in your prefered location",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lumpy-brontosaurus/nonprofit.git"
+  },
+  "author": "Ron Lapushner, Hridhya Vijayakumaran, Ajoke Salaudeen, Lyly Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lumpy-brontosaurus/nonprofit/issues"
+  },
+  "homepage": "https://github.com/lumpy-brontosaurus/nonprofit#readme"
+}
