@@ -1,21 +1,44 @@
-<div ng-controller="MainCtrl">
+<!--<div ng-controller="MainCtrl">-->
 
-    <div class="jumbotron">
+    <!--<div class="jumbotron">-->
 
-        <div class="container">
-            <h1>Find Ways To Do Good</h1>
-            <p></p>
-        </div>
+        <!--<div class="container">-->
+            <!--<h1>Find Ways To Do Good</h1>-->
+            <!--<p></p>-->
+        <!--</div>-->
 
-    </div>
+    <!--</div>-->
 
-    <div class="main">
-        <div class = "container">
-            <form id = 'search-form' ng-submit="filterContents()">
-                <div class="col-md-6"><input id = 'inputItem' class = "form-control " type="text" placeholder="Area of interest" ng-model="item"/></div>
-                <div class="col-md-4"><input id = 'inputZip' class = "form-control " type="text" placeholder="Zipcode" ng-model="zip"/></div>
-                <div><button><span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 26px;"></span></button></div>
-            </form>
-        </div>
+    <!--<div class="main">-->
+        <!--<div class = "container">-->
+            <!--<form id = 'search-form' ng-submit="filterContents()">-->
+                <!--<div class="col-md-6"><input id = 'inputItem' class = "form-control " type="text" placeholder="Area of interest" ng-model="item"/></div>-->
+                <!--<div class="col-md-4"><input id = 'inputZip' class = "form-control " type="text" placeholder="Zipcode" ng-model="zip"/></div>-->
+                <!--<div><a ui-sref=".mapView"><span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 26px;"></span></a></div>-->
+                <!--<a ui-sref=".list" class="btn btn-primary">List</a>-->
+            <!--</form>-->
+        <!--</div>-->
+    <!--</div>-->
+
+    <!--&lt;!&ndash;<div map-lazy-load="https://maps.google.com/maps/api/js">&ndash;&gt;-->
+        <!--&lt;!&ndash;<ng-map center="41,-87" zoom="3"></ng-map>&ndash;&gt;-->
+    <!--&lt;!&ndash;</div>&ndash;&gt;-->
+<!--</div>-->
+
+<div class="jumbotron text-center">
+    <h1>Find Ways To Do Good</h1>
+</div>
+
+<div class="main">
+    <div class = "container">
+        <form id = 'search-form' ng-submit="filterContents()">
+            <div class="col-md-6"><input id = 'inputItem' class = "form-control " type="text" placeholder="Area of interest" ng-model="item"/></div>
+            <div class="col-md-4"><input id = 'inputZip' class = "form-control " type="text" placeholder="Zipcode" ng-model="zip"/></div>
+            <!--<div><a ui-sref=".mapView"><span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 26px;"></span></a></div>-->
+            <a ui-sref=".list" class="btn btn-primary"><span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 26px;"></a>
+        </form>
     </div>
 </div>
+
+<div ui-view></div>
+
