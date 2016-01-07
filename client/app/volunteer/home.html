@@ -1,0 +1,21 @@
+<div ng-controller="MainCtrl">
+
+    <div class="jumbotron">
+
+        <div class="container">
+            <h1>Find Ways To Do Good</h1>
+            <p></p>
+        </div>
+
+    </div>
+
+    <div class="main">
+        <div class = "container">
+            <form id = 'search-form' ng-submit="filterContents()">
+                <div class="col-md-6"><input id = 'inputItem' class = "form-control " type="text" placeholder="Area of interest" ng-model="item"/></div>
+                <div class="col-md-4"><input id = 'inputZip' class = "form-control " type="text" placeholder="Zipcode" ng-model="zip"/></div>
+                <div><button><span class="glyphicon glyphicon-search" aria-hidden="true" style="font-size: 26px;"></span></button></div>
+            </form>
+        </div>
+    </div>
+</div>
